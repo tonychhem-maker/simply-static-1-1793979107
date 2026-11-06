@@ -1,0 +1,103 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"layout": { "contentSize": "1080px", "wideSize": "1227px" },
+		"spacing": {
+			"spacingSizes": [
+				{ "slug": "8", "name": "8 px", "size": "0.5rem" },
+				{ "slug": "16", "name": "16 px", "size": "1rem" },
+				{ "slug": "24", "name": "24 px", "size": "1.5rem" },
+				{ "slug": "32", "name": "32 px", "size": "2rem" },
+				{ "slug": "48", "name": "48 px", "size": "3rem" },
+				{ "slug": "64", "name": "64 px", "size": "4rem" },
+				{ "slug": "96", "name": "96 px", "size": "6rem" }
+			],
+			"units": [ "px", "rem" ]
+		},
+		"color": {
+			"palette": [
+				{ "slug": "vert-fonce", "name": "Vert foncé", "color": "#095227" },
+				{ "slug": "vert-vif", "name": "Vert vif", "color": "#36985D" },
+				{ "slug": "creme", "name": "Crème", "color": "#F3EFE6" },
+				{ "slug": "beige", "name": "Beige", "color": "#E4DCCF" },
+				{ "slug": "vert-pale", "name": "Vert pâle", "color": "#DAE5D5" },
+				{ "slug": "vert-pale-bande", "name": "Vert pâle (bande)", "color": "#E8F2E5" },
+				{ "slug": "vert-bande", "name": "Vert bande", "color": "#35985F" },
+				{ "slug": "creme-clair", "name": "Crème clair", "color": "#FBF8F2" },
+				{ "slug": "vert-nuit", "name": "Vert nuit", "color": "#063A1D" },
+				{ "slug": "bordure", "name": "Bordure", "color": "#D9D0C0" },
+				{ "slug": "encre", "name": "Encre", "color": "#1C202C" },
+				{ "slug": "texte", "name": "Texte", "color": "#1A1A1A" },
+				{ "slug": "fil-fonce", "name": "Fil foncé", "color": "#4E8B64" },
+				{ "slug": "fil-clair", "name": "Fil clair", "color": "#B8CFC0" },
+				{ "slug": "blanc", "name": "Blanc", "color": "#FFFFFF" }
+			]
+		},
+		"typography": {
+			"fluid": true,
+			"customFontSize": true,
+			"fontSizes": [
+				{ "slug": "small", "name": "Petit", "size": "0.9375rem" },
+				{ "slug": "medium", "name": "Moyen", "size": "1.125rem" },
+				{ "slug": "large", "name": "Grand", "size": "1.5rem" },
+				{ "slug": "x-large", "name": "Très grand", "size": "2rem" },
+				{ "slug": "xx-large", "name": "Titre", "size": "clamp(2.25rem, 4vw, 3rem)" },
+				{ "slug": "huge", "name": "Titre principal", "size": "clamp(3rem, 6vw, 4.5rem)" }
+			],
+			"fontFamilies": [
+				{
+					"slug": "titres",
+					"name": "Baskervville",
+					"fontFamily": "Baskervville, Georgia, serif",
+					"fontFace": [
+						{
+							"fontFamily": "Baskervville",
+							"fontStyle": "normal",
+							"fontWeight": "400 700",
+							"src": [ "file:./assets/fonts/Baskervville-Variable.ttf" ]
+						}
+					]
+				},
+				{
+					"slug": "condensee",
+					"name": "Baskervville (titres)",
+					"fontFamily": "Baskervville, Georgia, serif",
+					"fontFace": [
+						{
+							"fontFamily": "Baskervville",
+							"fontStyle": "normal",
+							"fontWeight": "400 700",
+							"src": [ "file:./assets/fonts/Baskervville-Variable.ttf" ]
+						}
+					]
+				},
+				{
+					"slug": "corps",
+					"name": "Nunito",
+					"fontFamily": "Nunito, system-ui, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Nunito",
+							"fontStyle": "normal",
+							"fontWeight": "200 1000",
+							"src": [ "file:./assets/fonts/Nunito-Variable.ttf" ]
+						}
+					]
+				}
+			]
+		}
+	},
+	"styles": {
+		"color": { "background": "#F3EFE6", "text": "#1A1A1A" },
+		"typography": { "fontFamily": "var(--wp--preset--font-family--corps)", "lineHeight": "1.7" },
+		"elements": {
+			"h1": { "color": { "text": "#1C202C" }, "typography": { "fontFamily": "var(--wp--preset--font-family--titres)", "fontWeight": "300", "lineHeight": "1.5" } },
+			"h2": { "color": { "text": "#095227" }, "typography": { "fontFamily": "var(--wp--preset--font-family--titres)", "fontWeight": "500", "lineHeight": "1.2", "fontSize": "clamp(2.25rem, 4vw, 3.5rem)" } },
+			"h3": { "color": { "text": "#095227" }, "typography": { "fontFamily": "var(--wp--preset--font-family--titres)", "fontWeight": "500", "lineHeight": "1.3" } },
+			"link": { "color": { "text": "#095227" }, "typography": { "textDecoration": "underline" } }
+		}
+	}
+}
